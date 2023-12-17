@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shop Management</h1>
+  <div class="container">
+    <div id="owner-side">
+      <h2>Owner Side</h2>
+      <form id="addItemForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+        
+        <label for="itemDescription">Description:</label>
+        <input id="itemDescription" required>
+        
+        <label for="itemPrice">Price:</label>
+        <input type="number" id="itemPrice" required>
+        
+        <label for="itemQuantity">Quantity:</label>
+        <input type="number" id="itemQuantity" required>
+        
+        <button type="button" onclick="addItem()">Add Item</button>
+      </form>
+    </div>
+
+    <div id="customer-side">
+      <h2>Customer Side</h2>
+      <div id="itemList"></div>
+
+    </div>
+    
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
